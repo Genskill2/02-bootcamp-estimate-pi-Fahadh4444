@@ -2,13 +2,11 @@ import math
 import unittest
 import random
 
-
 def wallis(n):
     ans = 2
     for x in range(1, n+1):
         ans *= ((4*(x**2))/((4*(x**2)) - 1))
     return ans
-
 
 def monte_carlo(n):
     inside = 0
